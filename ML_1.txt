@@ -1,0 +1,56 @@
+1- C
+2- A
+3- C
+4- D
+5- C
+6- B
+7- D
+
+Questions 8 to 10
+
+8- D
+9- A, B, D
+10- A, D
+
+Questions 11 to 15
+
+11- Outliers are extreme values that deviate from other observations on data , 
+    they may indicate a variability in a measurement, experimental errors.
+     
+    IQR- Any set of data can be described by its five-number summary. 
+         These five numbers, which give you the information you need to find patterns and outliers, consist of (in ascending order):
+	
+       * The minimum or lowest value of the dataset
+       * The first quartile Q1, which represents a quarter of the way through the list of all data
+       * The median of the data set, which represents the midpoint of the whole list of data
+       * The third quartile Q3, which represents three-quarters of the way through the list of all data
+       * The maximum or highest value of the data set.
+
+     IQR can be Claculated as:
+     
+     IQR = Q3 - Q1
+
+12- Bagging algorithm that aim to reduce the complexity of models that overfit the training data. 
+    While, boosting is an approach to increase the complexity of models that suffer from high bias, that is, models that underfit the training data.
+
+13- R2 shows how well terms (data points) fit a curve or line. 
+    Adjusted R2 also indicates how well terms fit a curve or line, but adjusts for the number of terms in a model. 
+    If you add more and more useless variables to a model, adjusted r-squared will decrease. If you add more useful variables, adjusted r-squared will increase.
+    Adjusted R2 will always be less than or equal to R2.
+    Calculation:
+                R2 = 1- [(1-R2)(N-1)/(N-k-1)]
+	where
+	      * N is the number of points in your data sample.
+	      * K is the number of independent regressors, i.e. the number of variables in your model, excluding the constant.
+	note: to increase the value of Adjusted R2, the k should be low.
+
+14- Normalization usually means to scale a variable to have a values between 0 and 1, 
+    while standardization transforms data to have a mean of zero and a standard deviation of 1.
+
+15- Cross-validation is a statistical technique which involves partitioning the data into subsets, 
+    training the data on a subset and use the other subset to evaluate the model's performance. 
+    To reduce variability we perform multiple rounds of cross-validation with different subsets from the same data.
+    
+    The advantage of this method is that the proportion of the validation or training split is not dependent on the number of folds (K-fold test). 
+    However, there is a disadvantage as well. There are chances that you might miss out some observations whereas you might select some observations more than once.
+              
