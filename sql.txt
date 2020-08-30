@@ -1,0 +1,34 @@
+1- A, C, D
+2- A, B, C
+3- B
+4- B
+5- A
+6- C
+7- B
+8- B
+9- B
+10- A
+
+Questions 11 to 15:
+
+11- Data warehouse is an information system that stores historical and commutative data from single or multiple sources.
+    Database is designed to record data whereas the Data warehouse is designed to analyze data.
+
+12- Online transaction processing (OLTP) captures, stores, and processes data from transactions in real time. 
+    Online analytical processing (OLAP) uses complex queries to analyze aggregated historical data from OLTP systems.
+    Online Analytical Processing consists of a type of software tools that are used for data analysis for business decisions. 
+    OLAP provides an environment to get insights from the database retrieved from multiple database systems at one time.
+
+13- There are three prominent data warehouse characteristics:
+    Integrated: The way data is extracted and transformed is uniform, regardless of the original source.
+    Time-variant: Data is organized via time-periods (weekly, monthly, annually, etc.).
+    Non-volatile: A data warehouse is not updated in real-time. It is periodically updated via the uploading of data, protecting it from the influence of momentary change.
+
+14- Star schemas are optimized for querying large data sets and are used in data warehouses and data marts to support OLAP cubes, 
+    business intelligence and analytic applications, and ad hoc queries. A star schema is diagramed by surrounding each fact with its associated dimensions. 
+    The resulting diagram resembles a star.
+
+15- Set Theory as a Language(SETL) is a high-level programming language that's based on the mathematical theory of sets. 
+    It was developed in the early 1970's by mathematician Professor J.
+
+    
