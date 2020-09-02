@@ -1,0 +1,35 @@
+1- B
+2- B
+3- C
+4- A
+5- A
+6- B
+7- C
+8- A
+
+9- A
+10- B, D
+
+11- At a very basic level, deep learning is a machine learning technique. 
+    It teaches a computer to filter inputs through layers to learn how to predict and classify information. 
+    Observations can be in the form of images, text, or sound. The inspiration for deep learning is the way that the human brain filters information.
+
+12- Reinforcement learning (RL) comes from the self-learning theory. RL can autonomously get optional results with the knowledge obtained from various conditions by interacting with dynamic environment. 
+    It allows machines and software agents to automatically determine the ideal behavior within a specific context, in order to maximize its performance. 
+    Neural network reinforcement learning is most popular algorithm. Advantage of using neural network is that it regulates RL more efficient in real life applications.
+
+13- In Machine learning systems, a human needs to identify and hand-code the applied features based on the data type (for example, pixel value, shape, orientation), 
+    a deep learning system tries to learn those features without additional human intervention. Take the case of a facial recognition program. 
+    The program first learns to detect and recognize edges and lines of faces, then more significant parts of the faces, and then finally the overall representations of faces. 
+    The amount of data involved in doing this is enormous, and as time goes on and the program trains itself, the probability of correct answers (that is, accurately identifying faces) increases. 
+    And that training happens through the use of neural networks, similar to the way the human brain works, without the need for a human to recode the program.
+
+14- A neuron receives inputs from multiple neurons and outputs a value based upon the activation function. 
+    The perceptron is one of the easiest data structures for the study of neural networking. The perceptron models a neuron's behavior in the following way: 
+    First, the perceptron receives several input values. 
+
+15- In ML, The goal is to learn from data on certain task to maximize the performance of machine on this task. It involves in creating self learning algorithms.
+    ML will go for only solution for that whether it is optimal or not.It is a simple concept machine takes data and learn from data.
+    While in AI, intelligence is defined as a ability to acquire and apply knowledge. The goal is to simulate natural intelligence to solve complex problem.
+    It leads to develop a system to mimic human to respond behave in a circumstances. It work as a computer program that does smart work.
+ 
