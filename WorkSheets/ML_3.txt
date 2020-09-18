@@ -1,0 +1,87 @@
+1- Linear
+   Linear Kernel is used when the data is Linearly separable, that is, it can be separated using a single Line. 
+   It is one of the most common kernels to be used. It is mostly used when there are a Large number of Features in a particular Data Set. 
+   One of the examples where there are a lot of features, is Text Classification, as each alphabet is a new feature. So we mostly use Linear Kernel in Text Classification.
+
+   RBF
+   The similarity between two points in the transformed feature space is an exponentially decaying function of the distance between the vectors and the original input space as shown below. 
+   RBF is the default kernel used in SVM.
+
+   Polynomial
+   The Polynomial kernel takes an additional parameter, ‘degree’ that controls the model’s complexity and computational cost of the transformation.
+
+2- The residual sum of squares measures the amount of error remaining between the regression function and the data set.
+   A smaller residual sum of squares figure represents a regression function. Residual sum of squares–also known as the sum of squared residuals–essentially determines how well a regression model explains or represents the data in the model.
+   Ideally, the sum of squared residuals should be a smaller or lower value in any regression model.
+   
+   however, a smaller or lower value for the residual sum of squares is ideal in any model since it means there's less variation in the data set. 
+   In other words, the lower the sum of squared residuals, the better the regression model is at explaining the data.
+
+3- TSS
+   The residual sum of squares is used to help you decide if a statistical model is a good fit for your data. It measures the overall difference between your data and the values predicted by your estimation model (a “residual” is a measure of the distance from a data point to a regression line). 
+   Total SS is related to the total sum and explained sum with the following formula:
+   y = Y - Y1
+   Total SS = Explained SS + Residual Sum of Squares.
+   
+   ESS
+   The Explained SS tells you how much of the variation in the dependent variable your model explained.
+   Explained SS = S(Y-Hat – mean of Y)2.
+
+   RSS
+   The residual sum of squares tells you how much of the dependent variable’s variation your model did not explain. It is the sum of the squared differences between the actual Y and the predicted Y:
+   Residual Sum of Squares = S e2
+
+4- Gini index or Gini impurity measures the degree or probability of a particular variable being wrongly classified when it is randomly chosen. 
+   But what is actually meant by ‘impurity’? If all the elements belong to a single class, then it can be called pure. 
+   The degree of Gini index varies between 0 and 1, where 0 denotes that all elements belong to a certain class or if there exists only one class, and 1 denotes that the elements are randomly distributed across various classes. 
+   A Gini Index of 0.5 denotes equally distributed elements into some classes.
+
+5- Decision trees are prone to overfitting, especially when a tree is particularly deep. This is due to the amount of specificity we look at leading to smaller sample of events that meet the previous assumptions. 
+   This small sample could lead to unsound conclusions.Ideally, we would like to minimize both error due to bias and error due to variance. Enter random forests. Random forests mitigate this problem well. A random forest is simply a collection of decision trees whose results are aggregated into one final result. 
+   Their ability to limit overfitting without substantially increasing error due to bias is why they are such powerful models.
+
+6- Ensemble learning helps improve machine learning results by combining several models.Ensemble methods are meta-algorithms that combine several machine learning techniques into one predictive model in order to decrease variance (bagging), bias (boosting), or improve predictions (stacking).
+
+7- While the training stage is parallel for Bagging (i.e., each model is built independently), Boosting builds the new learner in a sequential way.
+   In Boosting algorithms each classifier is trained on data, taking into account the previous classifiers’ success. After each training step, the weights are redistributed. Misclassified data increases its weights to emphasise the most difficult cases. 
+   In Bagging the result is obtained by averaging the responses of the N learners (or majority vote). However, Boosting assigns a second set of weights, this time for the N classifiers, in order to take a weighted average of their estimates.
+   In the Boosting training stage, the algorithm allocates weights to each resulting model. A learner with good a classification result on the training data will be assigned a higher weight than a poor one.
+
+8- Out-of-bag (OOB) error, also called out-of-bag estimate, is a method of measuring the prediction error of random forests, boosted decision trees, and other machine learning models utilizing bootstrap aggregating (bagging) to sub-sample data samples used for training.
+
+9- Cross-validation is primarily used in applied machine learning to estimate the skill of a machine learning model on unseen data. 
+   That is, to use a limited sample in order to estimate how the model is expected to perform in general when used to make predictions on data not used during the training of the model.
+   It is a popular method because it is simple to understand and because it generally results in a less biased or less optimistic estimate of the model skill than other methods, such as a simple train/test split.
+
+10- In machine learning, hyperparameter optimization or tuning is the problem of choosing a set of optimal hyperparameters for a learning algorithm. A hyperparameter is a parameter whose value is used to control the learning process. 
+    By contrast, the values of other parameters (typically node weights) are learned.
+    The same kind of machine learning model can require different constraints, weights or learning rates to generalize different data patterns. 
+    These measures are called hyperparameters, and have to be tuned so that the model can optimally solve the machine learning problem. 
+    Hyperparameter optimization finds a tuple of hyperparameters that yields an optimal model which minimizes a predefined loss function on given independent data.[1] 
+    The objective function takes a tuple of hyperparameters and returns the associated loss.[1] Cross-validation is often used to estimate this generalization performance
+
+11- If your learning rate is set too low, training will progress very slowly as you are making very tiny updates to the weights in your network. However, if your learning rate is set too high, it can cause undesirable divergent behavior in your loss function
+
+12- To achieve a balance between the Bias error and the Variance error, we need a value of k such that the model neither learns from the noise (overfit on data) nor makes sweeping assumptions on the data(underfit on data).
+    Though some points are classified incorrectly, the model generally fits most of the datapoints accurately. The balance between the Bias error and the Variance error is the Bias-Variance Tradeoff.
+
+13- Regularizations are techniques used to reduce the error by fitting a function appropriately on the given training set and avoid overfitting.
+    Regularization is a technique used for tuning the function by adding an additional penalty term in the error function. 
+    The additional term controls the excessively fluctuating function such that the coefficients don’t take extreme values. 
+    This technique of keeping a check or reducing the value of error coefficients are called shrinkage methods or weight decay in case of neural networks.
+
+14- Gradient boosting
+    This approach trains learners based upon minimising the loss function of a learner (i.e., training on the residuals of the model) 
+    Weak learners are decision trees constructed in a greedy manner with split points based on purity scores (i.e., Gini, minimise loss). 
+    Thus, larger trees can be used with around 4 to 8 levels. Learners should still remain weak and so they should be constrained (i.e., the maximum number of layers, nodes, splits, leaf nodes)
+    
+    AdaBoost
+    This method focuses on training upon misclassified observations. Alters the distribution of the training dataset to increase weights on sample observations that are difficult to classify.
+    The weak learners incase of adaptive boosting are a very basic form of decision tree known as stumps.
+    The final prediction is based on a majority vote of the weak learners’ predictions weighted by their individual accuracy.
+
+15- Logistic regression is known and used as a linear classifier. It is used to come up with a hyperplane in feature space to separate observations that belong to a class from all the other observations that do not belong to that class. 
+    The decision boundary is thus linear. Robust and efficient implementations are readily available (e.g. scikit-learn) to use logistic regression as a linear classifier.
+    Logistic regression has traditionally been used to come up with a hyperplane that separates the feature space into classes. 
+    But if we suspect that the decision boundary is nonlinear we may get better results by attempting some nonlinear functional forms for the logit function. 
+    Solving for the model parameters can be more challenging but the optimization modules in scipy can help.
